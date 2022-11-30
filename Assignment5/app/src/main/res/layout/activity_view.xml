@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:menu="@menu/right_corner"
+    tools:context=".ViewActivity">
+
+    <TextView
+        android:id="@+id/txt_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"
+        android:text="Shopping Item" />
+
+    <TextView
+        android:id="@+id/txt_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_item_title"
+        android:width="600px"
+        app:layout_constraintStart_toStartOf="@id/txt_item_title"
+        android:background="@drawable/textbox"
+        android:text="Item A" />
+
+    <TextView
+        android:id="@+id/txt_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_item"
+        app:layout_constraintStart_toStartOf="@id/txt_item"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Details" />
+
+    <EditText
+        android:id="@+id/ET_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintTop_toBottomOf="@id/txt_detail_title"
+        app:layout_constraintStart_toStartOf="@id/txt_detail_title"
+        android:textColor="@color/black"
+        android:background="@drawable/textbox"
+        android:height="200px"
+        android:width="900px"
+        android:layout_marginTop="10dp"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/txt_quantity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/ET_detail"
+        app:layout_constraintStart_toStartOf="@+id/ET_detail"
+        android:text="Quantity: " />
+
+    <TextView
+        android:id="@+id/txt_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/txt_quantity_title"
+        app:layout_constraintStart_toEndOf="@id/txt_quantity_title"
+        android:background="@drawable/textbox"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="5dp"
+        android:width="250px"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/txt_size_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/txt_quantity"
+        app:layout_constraintStart_toEndOf="@id/txt_quantity"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Size: " />
+
+    <TextView
+        android:id="@+id/txt_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/txt_size_title"
+        app:layout_constraintStart_toEndOf="@id/txt_size_title"
+        android:background="@drawable/textbox"
+        android:layout_marginLeft="10dp"
+        android:width="250px"
+        android:paddingLeft="5dp"
+        android:text="Default" />
+
+    <TextView
+        android:id="@+id/txt_urgent_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_quantity_title"
+        app:layout_constraintStart_toStartOf="@id/txt_quantity_title"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Urgent: " />
+
+    <ImageView
+        android:id="@+id/img_urgent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/txt_urgent_title"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_urgent_title"
+        app:layout_constraintStart_toEndOf="@id/txt_urgent_title"
+        app:srcCompat="@drawable/checked" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

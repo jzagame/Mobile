@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgggg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/myMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="1700px"
+        tools:context=".MainActivity" />
+
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/myMap"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="@+id/txt1"
+        app:layout_constraintTop_toBottomOf="@+id/txt1"
+        android:id="@+id/txt"
+        android:layout_width="650px"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black" />
+
+    <ImageView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myMap"
+        android:layout_margin="10dp"
+        android:id="@+id/myImg"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:src="@drawable/ic_launcher_background"
+        android:contentDescription="TODO" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        app:layout_constraintBottom_toTopOf="@+id/myImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        android:id="@+id/float1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/common_google_signin_btn_icon_dark" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        app:layout_constraintBottom_toTopOf="@+id/float1"
+        app:layout_constraintEnd_toEndOf="@id/float1"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/float2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/common_full_open_on_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/banner2" />
+
+            <TextView
+                android:id="@+id/txt_step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Step 1: Select the mains"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/img_breakfast"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/img_breakfast" />
+
+            <ImageView
+                android:id="@+id/img_breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:layout_constraintStart_toEndOf="@+id/txt_step1"
+                app:layout_constraintTop_toBottomOf="@+id/img_banner"
+                app:srcCompat="@drawable/breakfast_icon" />
+
+            <View
+                android:id="@+id/divider_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintTop_toBottomOf="@+id/img_breakfast" />
+
+            <CheckBox
+                android:id="@+id/cb_eggs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scrambled Eggs"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider_1" />
+
+            <CheckBox
+                android:id="@+id/cb_omellete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Omellete"
+                app:layout_constraintEnd_toStartOf="@+id/cb_pancake"
+                app:layout_constraintStart_toEndOf="@+id/cb_eggs"
+                app:layout_constraintTop_toTopOf="@+id/cb_eggs" />
+
+            <CheckBox
+                android:id="@+id/cb_pancake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pancake"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cb_omellete"
+                app:layout_constraintTop_toTopOf="@+id/cb_omellete" />
+
+            <CheckBox
+                android:id="@+id/cb_sausage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sausages"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_eggs" />
+
+            <CheckBox
+                android:id="@+id/cb_beefbacon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beef Bacon"
+                app:layout_constraintStart_toStartOf="@+id/cb_omellete"
+                app:layout_constraintTop_toBottomOf="@+id/cb_omellete" />
+
+            <CheckBox
+                android:id="@+id/cb_ham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ham"
+                app:layout_constraintStart_toStartOf="@+id/cb_pancake"
+                app:layout_constraintTop_toBottomOf="@+id/cb_pancake" />
+
+            <TextView
+                android:id="@+id/txt_step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Step 2:Select your sides "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb_sausage" />
+
+            <ImageView
+                android:id="@+id/img_side"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_step2"
+                app:layout_constraintStart_toEndOf="@id/txt_step2"
+                app:layout_constraintTop_toTopOf="@+id/txt_step2"
+                app:srcCompat="@drawable/side_icon" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintTop_toBottomOf="@+id/img_side" />
+
+            <CheckBox
+                android:id="@+id/cb_beans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Baked Beans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+            <CheckBox
+                android:id="@+id/cb_tomato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Tomatoes"
+                app:layout_constraintBottom_toBottomOf="@id/cb_beans"
+                app:layout_constraintStart_toStartOf="@+id/cb_beefbacon"
+                app:layout_constraintTop_toTopOf="@id/cb_beans" />
+
+            <CheckBox
+                android:id="@+id/cb_hashbrown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Hash Brown"
+                app:layout_constraintBottom_toBottomOf="@id/cb_tomato"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/cb_ham"
+                app:layout_constraintTop_toTopOf="@id/cb_tomato" />
+
+            <CheckBox
+                android:id="@+id/cb_sauteVege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Saute Vegetables"
+                app:layout_constraintStart_toStartOf="@id/cb_beans"
+                app:layout_constraintTop_toBottomOf="@id/cb_beans" />
+
+            <CheckBox
+                android:id="@+id/cb_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Toast"
+                app:layout_constraintStart_toStartOf="@id/cb_tomato"
+                app:layout_constraintTop_toBottomOf="@id/cb_tomato" />
+
+            <CheckBox
+                android:id="@+id/cb_salad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Salad"
+                app:layout_constraintStart_toStartOf="@id/cb_hashbrown"
+                app:layout_constraintTop_toBottomOf="@id/cb_hashbrown" />
+
+            <TextView
+                android:id="@+id/txt_step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Step 3: Select your beverage"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb_sauteVege" />
+
+            <ImageView
+                android:id="@+id/img_coffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_step3"
+                app:layout_constraintStart_toEndOf="@id/txt_step3"
+                app:layout_constraintTop_toTopOf="@id/txt_step3"
+                app:srcCompat="@drawable/coffee_icon" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="?android:attr/listDivider"
+
+                app:layout_constraintTop_toBottomOf="@id/img_coffee" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider3">
+
+                <RadioButton
+                    android:id="@+id/rd_coffee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Coffee" />
+
+                <RadioButton
+                    android:id="@+id/rd_tea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Tea" />
+
+                <RadioButton
+                    android:id="@+id/rd_juice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="Juice" />
+
+                <RadioButton
+                    android:id="@+id/rd_milk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Milk" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/radioGroup1" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/divider4"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="NEXT"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

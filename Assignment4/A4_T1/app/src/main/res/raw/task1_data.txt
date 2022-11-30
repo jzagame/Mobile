@@ -1,0 +1,61 @@
+Phone:IPhone 13 Pro
+Url:https://www.trustedreviews.com/best/best-smartphone-3431175
+Chipset:Apple A15 Bionic
+Memory:128GB 6GB RAM
+Camera:12MP
+Image:iphone_13_pro.png
+Phone:Samsung S22
+Url:https://www.gsmarena.com/samsung_galaxy_s22_5g-11253.php
+Chipset:Snapdragon 8 Gen 1
+Memory:256GB 8GB RAM
+Camera:50MP
+Image:samsung_s22.jpg
+Tablet:Samsung Galaxy Tab S7
+Url:https://www.tomsguide.com/reviews/samsung-galaxy-tab-s7
+Chipset:Snapdragon 865+
+Memory:128GB 6GB RAM
+Camera:13MP
+Image:samsung_galaxy_s7.PNG
+Phone:Oppo Find X5
+Url:https://www.techradar.com/sg/reviews/oppo-find-x5-review
+Chipset:Snapdragon 888 
+Memory:256GB 12GB RAM
+Camera:50MP
+Image:oppo_findx5.jpg
+Phone:Xioami 12 Pro
+Url:https://www.androidauthority.com/xiaomi-12-pro-review-3137803/
+Chipset:Snapdragon 8 Gen 1
+Memory:128GB 8GB RAM
+Camera:50MP
+Image:xiaomi_12_pro.png
+Tablet:Realme Pad X
+Url:https://www.phonebunch.com/phone/realme-pad-x-4716/
+Chipset:Snapdragon 695
+Memory:128GB 6GB RAM
+Camera:13MP
+Image:realme_pad_x.PNG
+Phone:Nothing Phone(1)
+Url:https://www.slashgear.com/906081/nothing-phone-1-benchmarks-may-leave-you-disappointed/
+Chipset:Snapdragon 778G
+Memory:128GB 8GB RAM
+Camera:50MP
+Image:nothing_phone.jpg
+Tablet:Oppo Pad Air
+Url:https://www.gizmochina.com/product/oppo-pad-air/
+Chipset:Snapdragon 680 
+Memory:128GB 6GB RAM
+Camera:8MP
+Image:oppo_pad_air.jpg
+Tablet:IPad Air
+Url:https://www.theverge.com/22979828/apple-ipad-air-2022-review
+Chipset:Apple M1
+Memory:64GB 8GB RAM
+Camera:12MP
+Image:ipad_air.PNG
+Tablet:Lenovo Yoga Pad Pro
+Url:https://techxreviews.com/lenovo-yoga-pad-pro-tablet-review/
+Chipset:Snapdragon 870
+Memory:256GB 8GB RAM
+Camera:8MP
+Image:lenovo_yoga_pad_pro.jpg
+
